@@ -1,4 +1,6 @@
-$body-text: #B62777;
+$body-text: rgba(182,39,119,1);
+$body-bg: rgba(182,39,119,1);
+$body-bg-40: rgba(182,39,119,.4);
 $white: #ffffff;
 
 body {
@@ -13,11 +15,34 @@ h1 {
 
 .btn__soon:disabled {
     border-radius: 50px;
-    background-color: $body-text;
-    border-color: $body-text;
+    background-color: $body-bg;
+    border-color: $body-bg;
     color: $white;
 }
 
 .btn__soon:hover {
     box-shadow: -5px 3px 30px 0 rgba(182,39,119,0.6);
+}
+
+.home__page--main {
+    height: 90vh;
+    max-height: calc(100vh - 80px);
+}
+
+.page__link {
+    color: $white;
+    background: $body-bg-40;
+    padding: 4px 8px;
+    border-radius: 20px;
+
+    &:active, &:hover, &:visited {
+        color: $white;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+    }
+}
+
+.footer__icn img {
+    width: 24px;
+    height: 24px;
 }
